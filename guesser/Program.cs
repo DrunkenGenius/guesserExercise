@@ -14,7 +14,34 @@ namespace guesser
 
         static void Main(string[] args)
         {
-            /* TO DO: here is where you add your code! */
+            Console.WriteLine("Guess the Thies");
+            for (int i=1; i <= MaxTrials; i++)
+            {
+                if (Console.ReadLine() == "Henning")
+                {
+                    Console.WriteLine("YouGuessed the thief");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Du har " + (MaxTrials - i) + " forsøg tilbage");
+                        
+                    if (i == 2)
+                        Console.WriteLine("har 2 n'er");
+                    if (i == 4)
+                        Console.WriteLine("Starter med et h");
+                    if (i == 6)
+                        Console.WriteLine("slutter med ing");
+
+
+
+
+
+                }
+
+                Console.WriteLine("You have " + (MaxTrials - i) + (" tries left."));
+            }
+            Console.ReadLine();
         }
     }
 }
